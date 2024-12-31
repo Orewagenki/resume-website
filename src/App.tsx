@@ -12,7 +12,7 @@ function App() {
   return (
     <Container>
       <Grid container>
-        <Grid size={{ xs: 12, sm: 12, md: 4, lg: 3 }} bgcolor="blue">
+        <Grid size={{ xs: 12, sm: 12, md: 4, lg: 3 }}>
           <Profile />
         </Grid>
         <Grid size="grow" bgcolor="red">
