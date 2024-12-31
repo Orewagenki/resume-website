@@ -1,6 +1,7 @@
 import { Typography } from "@mui/material";
 import "./profile.css";
 import profileImage from "../../assets/images/profile.webp";
+import Timeline from "../timeline/Timeline";
 
 const Profile = () => {
   return (
@@ -13,7 +14,7 @@ const Profile = () => {
         <img src={profileImage} alt="" />
       </figure>
       <div className="profile_information">
-        Insert timeline
+        <Timeline />
         <button>My Button</button>
       </div>
     </div>
