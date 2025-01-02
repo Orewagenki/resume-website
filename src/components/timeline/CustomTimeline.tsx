@@ -7,36 +7,27 @@ import {
   TimelineSeparator,
 } from "@mui/lab";
 import { Typography } from "@mui/material";
-import CustomTimelineSeparator from "./CustomTimelineSeparator";
-import WorkIcon from "@mui/icons-material/Work";
 import "./CustomTimeline.css";
+import { ReactNode } from "react";
 
 interface Props {
-  title: string;
-  icon: string;
-  children: string;
+  children: ReactNode;
+  icon: any;
 }
 
-const CustomTimeline = () => {
+const CustomTimeline = ({ icon, children }: Props) => {
   return (
     <Timeline className="timeline">
       <TimelineItem className="timeline_firstItem">
         <TimelineSeparator>
-          <TimelineDot className="timeline_dot_header">
-            <WorkIcon />
-          </TimelineDot>
+          <TimelineDot className="timeline_dot_header"> {icon}</TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-          <Typography variant="h6" className="timeline_header">
-            Header
-          </Typography>
+          <Typography variant="h6" className="timeline_header"></Typography>
         </TimelineContent>
       </TimelineItem>
-      <TimelineItem>
-        <CustomTimelineSeparator />
-        <TimelineContent>Code</TimelineContent>
-      </TimelineItem>
+      {children}
     </Timeline>
   );
 };
