@@ -15,14 +15,15 @@ function App() {
         <Grid size={{ xs: 12, sm: 12, md: 4, lg: 3 }}>
           <Profile />
         </Grid>
-        <Grid size="grow" bgcolor="red">
+        <Grid size="grow">
+          <Header pathName={location?.pathname} />
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<Resume />} />
               <Route path="/portfolio" element={<Portfolio />} />
             </Routes>
           </BrowserRouter>
-          <Header /> <Footer />
+          <Footer />
         </Grid>
       </Grid>
     </Container>
