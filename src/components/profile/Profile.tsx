@@ -6,6 +6,7 @@ import profileImage from "../../assets/images/profile.webp";
 import resumeData from "../../utils/resumeData";
 
 import "./profile.css";
+import CustomButton from "../button/CustomButton";
 
 const Profile = () => {
   return (
@@ -40,7 +41,7 @@ const Profile = () => {
           ))}
         </CustomTimeline>
         <br />
-        <button>My Button</button>
+        <CustomButton text={"MyButton"} />
       </div>
     </div>
   );

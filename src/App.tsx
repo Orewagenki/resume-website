@@ -10,8 +10,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <Container>
-      <Grid container>
+    <Container className="top_60">
+      <Grid container spacing={5}>
         <Grid size={{ xs: 12, sm: 12, md: 4, lg: 3 }}>
           <Profile />
         </Grid>
