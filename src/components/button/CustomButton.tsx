@@ -10,7 +10,7 @@ const CustomButton = ({ text, icon }: Props) => {
   return (
     <Button
       className="custom_btn"
-      endIcon={icon && <div className="btn_icon_container">icon</div>}
+      endIcon={icon && <div className="btn_icon_container">{icon}</div>}
     >
       <span className="btn_text">{text}</span>
     </Button>

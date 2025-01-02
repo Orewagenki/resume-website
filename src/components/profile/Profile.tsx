@@ -2,9 +2,9 @@ import CustomeTimelineItem from "../timeline/CustomeTimelineItem";
 import CustomTimeline from "../timeline/CustomTimeline";
 import { Typography } from "@mui/material";
 import PersonIcon from "@mui/icons-material/Person";
+import DownloadIcon from "@mui/icons-material/Download";
 import profileImage from "../../assets/images/profile.webp";
 import resumeData from "../../utils/resumeData";
-
 import "./profile.css";
 import CustomButton from "../button/CustomButton";
 
@@ -40,8 +40,9 @@ const Profile = () => {
             />
           ))}
         </CustomTimeline>
-        <br />
-        <CustomButton text={"MyButton"} />
+        <div className="btn-container">
+          <CustomButton text={"DownLoad Cv"} icon={<DownloadIcon />} />
+        </div>
       </div>
     </div>
   );
