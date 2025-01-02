@@ -21,8 +21,8 @@ const CustomeTimelineItem = ({ title, text, link }: Props) => {
         <TimelineDot className="timeline_dot" />
         <TimelineConnector />
       </TimelineSeparator>
-      <TimelineContent>
-        <Typography>
+      <TimelineContent className="timelineItem_content">
+        <Typography className="timelineItem_text">
           <span>{title}:</span>
           {link ? (
             <a href={link} target="_blank">

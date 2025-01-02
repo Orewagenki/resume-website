@@ -7,7 +7,7 @@
 }
 
 .timeline .timeline_firstItem {
-  min-height: 80px !important;
+  min-height: 60px !important;
 }
 
 .timeline .MuiTimelineItem-root {
@@ -48,4 +48,23 @@
 .timeline .timeline_content {
   padding-top: 0px;
   margin-bottom: 20px;
+}
+
+.timeline .timelineItem_content {
+  margin-top: 2px;
+}
+
+.timeline .timelineItem_text {
+  font-size: 13.5px;
+  color: #787878;
+  font-weight: 400;
+}
+
+.timeline .timelineItem_text > a {
+  color: #787878;
+  text-decoration: none;
+}
+
+.timeline .timelineItem_text > span {
+  color: black;
 }

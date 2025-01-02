@@ -30,3 +30,9 @@
 .profile_image img {
   width: 100%;
 }
+
+.profile_information {
+  top: 0;
+  left: 0;
+  margin: -35px 10px 30px;
+}
