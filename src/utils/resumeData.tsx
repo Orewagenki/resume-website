@@ -2,7 +2,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 export default {
-  name: "Joey",
+  name: "Joey Sanchez",
   title: "Software Engineer",
   email: "orewagenki3@gmail.com",
   socials: {
