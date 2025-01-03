@@ -1,4 +1,4 @@
-import { Container, Paper, Typography } from "@mui/material";
+import { Box, Container, Paper, Typography } from "@mui/material";
 import "./Resume.css";
 import Grid from "@mui/material/Grid2";
 import resumeData from "../../utils/resumeData";

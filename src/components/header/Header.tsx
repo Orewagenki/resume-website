@@ -1,10 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { HomeRounded, Telegram } from "@mui/icons-material";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Nav } from "react-bootstrap";
 import Navbar from "react-bootstrap/Navbar";
-import { NavLink } from "react-router-dom";
 import resumeData from "../../utils/resumeData";
 import CustomButton from "../button/CustomButton";
 import "./Header.css";
@@ -15,7 +12,7 @@ interface Props {
 
 const Header = ({ pathName }: Props) => {
   return (
-    <Navbar expand="lg" sticky="top" className="header">
+    <Navbar expand="md" sticky="top" className="header">
       <Navbar.Brand href="/" className="header_home">
         <HomeRounded />
       </Navbar.Brand>
