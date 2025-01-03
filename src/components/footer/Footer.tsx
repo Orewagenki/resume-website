@@ -11,10 +11,7 @@ const Footer = () => {
       </div>
       <div className="footer_right">
         <Typography className="footer_copyright">
-          Designed and Developed by{" "}
-          <a href="/" target="_blank">
-            {resumeData.name}
-          </a>
+          Designed and Developed by <a href="/">{resumeData.name}</a>
           <br />
           Cloned idea from{" "}
           <a href="https://jobscruze.com/" target="_blank">

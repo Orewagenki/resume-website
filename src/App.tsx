@@ -17,12 +17,14 @@ function App() {
         </Grid>
         <Grid size="grow">
           <Header pathName={location?.pathname} />
-          <BrowserRouter>
-            <Routes>
-              <Route path="/" element={<Resume />} />
-              <Route path="/portfolio" element={<Portfolio />} />
-            </Routes>
-          </BrowserRouter>
+          <div className="main_content container_shadow">
+            <BrowserRouter>
+              <Routes>
+                <Route path="/" element={<Resume />} />
+                <Route path="/portfolio" element={<Portfolio />} />
+              </Routes>
+            </BrowserRouter>
+          </div>
           <Footer />
         </Grid>
       </Grid>
