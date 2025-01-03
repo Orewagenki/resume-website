@@ -43,4 +43,25 @@ export default {
       date: "December 2019",
     },
   ],
+  skills: [
+    {
+      title: "FRONT-END",
+      description: [
+        "ReactJs",
+        "JavaScript",
+        "TypeScript",
+        "Bootstrap",
+        "Material UI",
+        "Chakra UI",
+      ],
+    },
+    {
+      title: "BACK-END",
+      description: ["C++", "C#", "Python"],
+    },
+    {
+      title: "SOURCE CONTROL",
+      description: ["Git", "Github", "SCRUM/Agile"],
+    },
+  ],
 };

@@ -18,6 +18,10 @@
   padding: 30px;
 }
 
+.p_50 {
+  padding: 50px;
+}
+
 .pb_45 {
   padding-bottom: 45px;
 }
@@ -41,7 +45,6 @@
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   margin-bottom: 20px;
-  padding: 30px;
 }
 
 .section_title {
@@ -66,4 +69,17 @@
   opacity: 0.4;
   left: 0;
   background-color: var(--main-color);
+}
+
+.pt_45 {
+  padding-top: 45px;
+}
+
+.section {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.graybg {
+  background-color: #fafafa;
 }
