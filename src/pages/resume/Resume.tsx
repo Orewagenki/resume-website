@@ -36,7 +36,7 @@ const Resume = () => {
           <Grid size={{ xs: 12, md: 6 }}>
             <CustomTimeline title={"Work Experience"} icon={<WorkIcon />}>
               {resumeData.experiences.map((experience) => (
-                <TimelineItem>
+                <TimelineItem key={experience.title}>
                   <TimelineSeparator className="separator_padding">
                     <TimelineDot className="timeline_dot" />
                     <TimelineConnector />
@@ -62,7 +62,7 @@ const Resume = () => {
           <Grid size="grow">
             <CustomTimeline title={"Work Experience"} icon={<SchoolIcon />}>
               {resumeData.education.map((experience) => (
-                <TimelineItem>
+                <TimelineItem key={experience.title}>
                   <TimelineSeparator className="separator_padding">
                     <TimelineDot className="timeline_dot" />
                     <TimelineConnector />
@@ -84,19 +84,28 @@ const Resume = () => {
       <Container className="section graybg pb_45 p_50">
         <Grid container spacing={4}>
           {resumeData.skills.map((skill) => (
-            <Grid size={{ xs: 12, sm: 6, md: 4 }}>
-              <Paper elevation={0} className="skill">
-                <Typography variant="h6" className="skill_title">
-                  {skill.title}
-                </Typography>
-                {skill.description.map((item) => (
-                  <Typography variant="body2" className="skill_description">
-                    <TimelineDot variant="outlined" className="timeline_dot" />
-                    {item}
+            <Container key={skill.title}>
+              <Grid size={{ xs: 12, sm: 6, md: 4 }}>
+                <Paper elevation={0} className="skill">
+                  <Typography variant="h6" className="skill_title">
+                    {skill.title}
                   </Typography>
-                ))}
-              </Paper>
-            </Grid>
+                  {skill.description.map((item) => (
+                    <Typography
+                      variant="body2"
+                      className="skill_description"
+                      key={item}
+                    >
+                      <TimelineDot
+                        variant="outlined"
+                        className="timeline_dot"
+                      />
+                      {item}
+                    </Typography>
+                  ))}
+                </Paper>
+              </Grid>
+            </Container>
           ))}
         </Grid>
       </Container>
