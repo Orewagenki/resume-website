@@ -84,28 +84,23 @@ const Resume = () => {
       <Container className="section graybg pb_45 p_50">
         <Grid container spacing={4}>
           {resumeData.skills.map((skill) => (
-            <Container key={skill.title}>
-              <Grid size={{ xs: 12, sm: 6, md: 4 }}>
-                <Paper elevation={0} className="skill">
-                  <Typography variant="h6" className="skill_title">
-                    {skill.title}
+            <Grid size={{ xs: 12, sm: 6, md: 4 }}>
+              <Paper elevation={0} className="skill">
+                <Typography variant="h6" className="skill_title">
+                  {skill.title}
+                </Typography>
+                {skill.description.map((item) => (
+                  <Typography
+                    variant="body2"
+                    className="skill_description"
+                    key={item}
+                  >
+                    <TimelineDot variant="outlined" className="timeline_dot" />
+                    {item}
                   </Typography>
-                  {skill.description.map((item) => (
-                    <Typography
-                      variant="body2"
-                      className="skill_description"
-                      key={item}
-                    >
-                      <TimelineDot
-                        variant="outlined"
-                        className="timeline_dot"
-                      />
-                      {item}
-                    </Typography>
-                  ))}
-                </Paper>
-              </Grid>
-            </Container>
+                ))}
+              </Paper>
+            </Grid>
           ))}
         </Grid>
       </Container>
