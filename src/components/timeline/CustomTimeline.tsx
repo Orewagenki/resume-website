@@ -11,11 +11,12 @@ import "./CustomTimeline.css";
 import { ReactNode } from "react";
 
 interface Props {
+  title?: string;
   children: ReactNode;
   icon: any;
 }
 
-const CustomTimeline = ({ icon, children }: Props) => {
+const CustomTimeline = ({ icon, children, title }: Props) => {
   return (
     <Timeline className="timeline">
       <TimelineItem className="timeline_firstItem">
@@ -24,7 +25,9 @@ const CustomTimeline = ({ icon, children }: Props) => {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-          <Typography variant="h6" className="timeline_header"></Typography>
+          <Typography variant="h6" className="timeline_header">
+            {title}
+          </Typography>
         </TimelineContent>
       </TimelineItem>
       {children}

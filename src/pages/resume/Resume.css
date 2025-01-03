@@ -4,3 +4,22 @@
   line-height: 22px !important;
   white-space: pre-line;
 }
+
+.timeline .timeline_title {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.timeline .separator_padding {
+  padding-left: 18px !important;
+}
+
+.timeline .timeline_date {
+  color: darkslategray;
+}
+
+.timeline .timeline_description {
+  color: grey;
+  font-size: small;
+  margin-top: 6px;
+}
