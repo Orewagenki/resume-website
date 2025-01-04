@@ -1,22 +1,26 @@
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import gameImage from "../assets/images/gameDiscovery.png";
+import WebIcon from "@mui/icons-material/Web";
 
 export default {
   name: "Joey Sanchez",
   title: "Software Engineer",
   email: "orewagenki3@gmail.com",
-  socials: {
-    Github: {
+  socials: [
+    {
+      title: "GitHub",
       link: "https://github.com/Orewagenki",
       text: "MyGitHub",
       icon: <GitHubIcon />,
     },
-    LinkedIn: {
+    {
+      title: "LinkedIn",
       link: "https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BJ0%2BX6rgCRZWEJrxaVICvLg%3D%3D",
       text: "MyLinkedin",
       icon: <LinkedInIcon />,
     },
-  },
+  ],
   about:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   experiences: [
@@ -62,6 +66,91 @@ export default {
     {
       title: "SOURCE CONTROL",
       description: ["Git", "Github", "SCRUM/Agile"],
+    },
+  ],
+
+  projects: [
+    {
+      tag: "React",
+      image: gameImage,
+      title: "video game discovery app",
+      description:
+        "This is a video game search application I created using React and Typescript",
+      links: [
+        {
+          github: "https://github.com/Orewagenki/video-game-discovery-app",
+          icon: <GitHubIcon />,
+        },
+        {
+          webisite: "https://video-game-discovery-app-five.vercel.app/",
+          icon: <WebIcon />,
+        },
+      ],
+    },
+    {
+      tag: "React",
+      image: gameImage,
+      title: "Work Resume",
+      description:
+        "This is a my work resume I created using React and Typescript",
+      links: [
+        {
+          github: "https://github.com/Orewagenki/video-game-discovery-app",
+          icon: <GitHubIcon />,
+        },
+        {
+          webisite: "https://video-game-discovery-app-five.vercel.app/",
+          icon: <WebIcon />,
+        },
+      ],
+    },
+    {
+      tag: "Unity",
+      image: gameImage,
+      title: "Angry Bird clone",
+      description: "This is an Angry Bird clone I made using unity.",
+      links: [
+        {
+          github: "https://github.com/Orewagenki/video-game-discovery-app",
+          icon: <GitHubIcon />,
+        },
+        {
+          webisite: "https://video-game-discovery-app-five.vercel.app/",
+          icon: <WebIcon />,
+        },
+      ],
+    },
+    {
+      tag: "React",
+      image: gameImage,
+      title: "Food App",
+      description: "This is a recipe search application I created using React",
+      links: [
+        {
+          github: "https://github.com/Orewagenki/video-game-discovery-app",
+          icon: <GitHubIcon />,
+        },
+        {
+          webisite: "https://video-game-discovery-app-five.vercel.app/",
+          icon: <WebIcon />,
+        },
+      ],
+    },
+    {
+      tag: "React",
+      image: gameImage,
+      title: "Todo app",
+      description: "This is a todo application I created using React",
+      links: [
+        {
+          github: "https://github.com/Orewagenki/video-game-discovery-app",
+          icon: <GitHubIcon />,
+        },
+        {
+          webisite: "https://video-game-discovery-app-five.vercel.app/",
+          icon: <WebIcon />,
+        },
+      ],
     },
   ],
 };

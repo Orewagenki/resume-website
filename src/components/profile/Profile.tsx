@@ -31,12 +31,12 @@ const Profile = () => {
             text={resumeData.email}
             link={""}
           />
-          {Object.keys(resumeData.socials).map((item) => (
+          {[...new Set(resumeData.socials.map((item) => item))].map((item) => (
             <CustomeTimelineItem
-              key={resumeData.socials[item].text}
-              title={item}
-              text={resumeData.socials[item].text}
-              link={resumeData.socials[item].link}
+              key={item.title}
+              title={item.title}
+              text={item.text}
+              link={item.link}
             />
           ))}
         </CustomTimeline>

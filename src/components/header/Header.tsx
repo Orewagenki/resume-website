@@ -35,15 +35,12 @@ const Header = ({ pathName }: Props) => {
           </Nav.Link>
         </Nav>
         <div className="header_right">
-          {Object.keys(resumeData.socials).map((item) => (
-            <a
-              key={resumeData.socials[item].text}
-              href={resumeData.socials[item].link}
-              target="_blank"
-            >
-              {resumeData.socials[item].icon}
+          {[...new Set(resumeData.socials.map((item) => item))].map((item) => (
+            <a key={item.text} href={item.link} target="_blank">
+              {item.icon}
             </a>
           ))}
+
           <CustomButton text="Hire me" icon={<Telegram />} />
         </div>
       </Navbar.Collapse>
