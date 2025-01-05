@@ -78,11 +78,11 @@ export default {
         "This is a video game search application I created using React and Typescript",
       links: [
         {
-          github: "https://github.com/Orewagenki/video-game-discovery-app",
+          link: "https://github.com/Orewagenki/video-game-discovery-app",
           icon: <GitHubIcon />,
         },
         {
-          webisite: "https://video-game-discovery-app-five.vercel.app/",
+          link: "https://video-game-discovery-app-five.vercel.app/",
           icon: <WebIcon />,
         },
       ],
@@ -95,11 +95,11 @@ export default {
         "This is a my work resume I created using React and Typescript",
       links: [
         {
-          github: "https://github.com/Orewagenki/video-game-discovery-app",
+          link: "https://github.com/Orewagenki/resume-website",
           icon: <GitHubIcon />,
         },
         {
-          webisite: "https://video-game-discovery-app-five.vercel.app/",
+          link: "",
           icon: <WebIcon />,
         },
       ],
@@ -111,11 +111,11 @@ export default {
       description: "This is an Angry Bird clone I made using unity.",
       links: [
         {
-          github: "https://github.com/Orewagenki/video-game-discovery-app",
+          link: "https://github.com/Orewagenki/AngryBirdGame",
           icon: <GitHubIcon />,
         },
         {
-          webisite: "https://video-game-discovery-app-five.vercel.app/",
+          link: "",
           icon: <WebIcon />,
         },
       ],
@@ -127,11 +127,11 @@ export default {
       description: "This is a recipe search application I created using React",
       links: [
         {
-          github: "https://github.com/Orewagenki/video-game-discovery-app",
+          link: "https://github.com/Orewagenki/foodapp",
           icon: <GitHubIcon />,
         },
         {
-          webisite: "https://video-game-discovery-app-five.vercel.app/",
+          link: "",
           icon: <WebIcon />,
         },
       ],
@@ -143,11 +143,11 @@ export default {
       description: "This is a todo application I created using React",
       links: [
         {
-          github: "https://github.com/Orewagenki/video-game-discovery-app",
+          link: "https://github.com/Orewagenki/todoapp",
           icon: <GitHubIcon />,
         },
         {
-          webisite: "https://video-game-discovery-app-five.vercel.app/",
+          link: "",
           icon: <WebIcon />,
         },
       ],
