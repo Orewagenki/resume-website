@@ -1,5 +1,4 @@
 import Grid from "@mui/material/Grid2";
-import "./portfolio.css";
 import {
   Card,
   CardActionArea,
@@ -18,6 +17,7 @@ import {
 import { SetStateAction, useState } from "react";
 import resumeData from "../../utils/resumeData";
 import { JSX } from "react/jsx-runtime";
+import "./Portfolio.css";
 
 const Portfolio = () => {
   const [tabValue, setTabValue] = useState("All");
