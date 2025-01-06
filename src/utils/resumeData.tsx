@@ -26,7 +26,7 @@ export default {
     },
   ],
   about:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "Hello, my name is Joey. Welcome to my website. I am a software engineer at Northrop Grumman. Since 2021 I have been a part of various application projects. From requirements gathering, design, and writing code I have been part of all sections of the software development lifecycle. Currently, I am looking to take my career to web development. Although I work on embedded systems, I spend my free time building web applications. I find great joy in solving various programming problems and feel like web development scratches that itch. I am a resident of Utah. I speak English and Japanese, and I am currently learning Italian. My Hobbies outside of coding are jiu-jitsu, skateboarding, cooking, travel, and language learning (to name a few).",
   experiences: [
     {
       title: "Software Engineer - Northrop Grumman Corporation",
