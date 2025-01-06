@@ -1,4 +1,4 @@
-import { Box, Container, Paper, Typography } from "@mui/material";
+import { Container, Typography } from "@mui/material";
 import "./Resume.css";
 import Grid from "@mui/material/Grid2";
 import resumeData from "../../utils/resumeData";
@@ -12,6 +12,7 @@ import {
   TimelineItem,
   TimelineSeparator,
 } from "@mui/lab";
+import Skill from "../../components/resume/Skill";
 
 const Resume = () => {
   return (
@@ -84,23 +85,7 @@ const Resume = () => {
       <Container className="section graybg pb_45 p_50">
         <Grid container spacing={4}>
           {resumeData.skills.map((skill) => (
-            <Grid size={{ xs: 12, sm: 6, md: 4 }}>
-              <Paper elevation={0} className="skill">
-                <Typography variant="h6" className="skill_title">
-                  {skill.title}
-                </Typography>
-                {skill.description.map((item) => (
-                  <Typography
-                    variant="body2"
-                    className="skill_description"
-                    key={item}
-                  >
-                    <TimelineDot variant="outlined" className="timeline_dot" />
-                    {item}
-                  </Typography>
-                ))}
-              </Paper>
-            </Grid>
+            <Skill key={skill.title} skill={skill} />
           ))}
         </Grid>
       </Container>
