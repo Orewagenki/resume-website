@@ -2,6 +2,9 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import gameImage from "../assets/images/gameDiscovery.png";
 import foodAppImage from "../assets/images/foodapp.png";
+import workResumeImage from "../assets/images/workResume.png";
+import toDoAppImage from "../assets/images/todoApp.png";
+import angryBirdsImage from "../assets/images/angrybirdsGame.png";
 import WebIcon from "@mui/icons-material/Web";
 
 export default {
@@ -90,7 +93,7 @@ export default {
     },
     {
       tag: "React",
-      image: gameImage,
+      image: workResumeImage,
       title: "Work Resume",
       description:
         "This is a my work resume I created using React and Typescript",
@@ -107,7 +110,7 @@ export default {
     },
     {
       tag: "Unity",
-      image: gameImage,
+      image: angryBirdsImage,
       title: "Angry Bird clone",
       description: "This is an Angry Bird clone I made using unity.",
       links: [
@@ -116,7 +119,7 @@ export default {
           icon: <GitHubIcon />,
         },
         {
-          link: "",
+          link: "https://play.unity.com/en/games/bc2e295a-ed35-4e1c-8c4c-373be254be9e/angry-bird-clone",
           icon: <WebIcon />,
         },
       ],
@@ -139,7 +142,7 @@ export default {
     },
     {
       tag: "React",
-      image: gameImage,
+      image: toDoAppImage,
       title: "Todo app",
       description: "This is a todo application I created using React",
       links: [
@@ -148,7 +151,7 @@ export default {
           icon: <GitHubIcon />,
         },
         {
-          link: "",
+          link: "https://todoapp-psi-liart.vercel.app/",
           icon: <WebIcon />,
         },
       ],
