@@ -1,6 +1,7 @@
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import gameImage from "../assets/images/gameDiscovery.png";
+import foodAppImage from "../assets/images/foodapp.png";
 import WebIcon from "@mui/icons-material/Web";
 
 export default {
@@ -122,7 +123,7 @@ export default {
     },
     {
       tag: "React",
-      image: gameImage,
+      image: foodAppImage,
       title: "Food App",
       description: "This is a recipe search application I created using React",
       links: [
@@ -131,7 +132,7 @@ export default {
           icon: <GitHubIcon />,
         },
         {
-          link: "",
+          link: "https://foodapp-indol.vercel.app/",
           icon: <WebIcon />,
         },
       ],
