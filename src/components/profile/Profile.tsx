@@ -7,6 +7,7 @@ import profileImage from "../../assets/images/profile.webp";
 import resumeData from "../../utils/resumeData";
 import "./profile.css";
 import CustomButton from "../button/CustomButton";
+import resumeDocument from "../../assets/resumeDoc/OriginalResume.pdf";
 
 const Profile = () => {
   return (
@@ -40,9 +41,14 @@ const Profile = () => {
             />
           ))}
         </CustomTimeline>
-        <div className="btn-container">
+        <a
+          href={resumeDocument}
+          download="Joey's Resume"
+          target="_blank"
+          className="btn-container"
+        >
           <CustomButton text={"DownLoad Resume"} icon={<DownloadIcon />} />
-        </div>
+        </a>
       </div>
     </div>
   );

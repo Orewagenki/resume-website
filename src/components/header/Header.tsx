@@ -5,6 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import resumeData from "../../utils/resumeData";
 import CustomButton from "../button/CustomButton";
 import "./Header.css";
+import resumeDocument from "../../assets/resumeDoc/OriginalResume.pdf";
 
 interface Props {
   pathName?: string;
@@ -40,8 +41,14 @@ const Header = ({ pathName }: Props) => {
               {item.icon}
             </a>
           ))}
-
-          <CustomButton text="Hire me" icon={<Telegram />} />
+          <a
+            href={resumeDocument}
+            download="Joey's Resume"
+            target="_blank"
+            className="hireMe_button_container"
+          >
+            <CustomButton text="Hire me" icon={<Telegram />} />
+          </a>
         </div>
       </Navbar.Collapse>
     </Navbar>
