@@ -25,8 +25,10 @@ export default {
       icon: <LinkedInIcon />,
     },
   ],
-  about:
-    "Hello, my name is Joey. Welcome to my website. I am a software engineer at Northrop Grumman. Since 2021 I have been a part of various application projects. From requirements gathering, design, and writing code I have been part of all sections of the software development lifecycle. Currently, I am looking to take my career to web development. Although I work on embedded systems, I spend my free time building web applications. I find great joy in solving various programming problems and feel like web development scratches that itch. I am a resident of Utah. I speak English and Japanese, and I am currently learning Italian. My Hobbies outside of coding are jiu-jitsu, skateboarding, cooking, travel, and language learning (to name a few).",
+  aboutSectionOne:
+    "Hello, my name is Joey. Welcome to my website. I am a software engineer at Northrop Grumman. Since 2021 I have been a part of various application projects. From requirements gathering, design, and writing code I have been part of all sections of the software development lifecycle. ",
+  aboutSectionTwo:
+    "Currently, I am looking to take my career to web development. Although I work on embedded systems, I spend my free time building web applications. I find great joy in solving various programming problems and feel like web development scratches that itch. I am a resident of Utah. I speak English and Japanese, and I am currently learning Italian. My Hobbies outside of coding are jiu-jitsu, skateboarding, cooking, travel, and language learning (to name a few).",
   experiences: [
     {
       title: "Software Engineer - Northrop Grumman Corporation",

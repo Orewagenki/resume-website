@@ -121,14 +121,14 @@ const Portfolio = () => {
           </Typography>
         </DialogContent>
         <DialogActions className="projectDialog_actions">
-          {project?.links?.map((link: { link: string | undefined }) => (
+          {project?.links?.map((link) => (
             <a
               key={link.link}
               href={link.link}
               target="_blank"
               className="projectDialog_icon"
             >
-              {link.link}
+              {link.icon}
             </a>
           ))}
         </DialogActions>

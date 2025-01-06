@@ -24,7 +24,11 @@ const Resume = () => {
         </Grid>
         <Grid size={{ xs: 12 }}>
           <Typography variant="body2" className="aboutme_text">
-            {resumeData.about}
+            {resumeData.aboutSectionOne}
+          </Typography>
+          <br />
+          <Typography variant="body2" className="aboutme_text">
+            {resumeData.aboutSectionTwo}
           </Typography>
         </Grid>
       </Container>

@@ -1,4 +1,3 @@
-import React from "react";
 import "./Footer.css";
 import { Typography } from "@mui/material";
 import resumeData from "../../utils/resumeData";
