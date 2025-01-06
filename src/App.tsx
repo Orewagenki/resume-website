@@ -16,11 +16,7 @@ function App() {
           <Profile />
         </Grid>
         <Grid size="grow">
-          <Header
-            pathName={
-              "https://resume-website-n86bixc2g-joeys-projects-2eac6722.vercel.app/"
-            }
-          />
+          <Header pathName={location?.pathname} />
           <div className="main_content container_shadow">
             <BrowserRouter>
               <Routes>
