@@ -105,7 +105,7 @@ export default {
           icon: <GitHubIcon />,
         },
         {
-          link: "",
+          link: "https://resume-website-six-flax.vercel.app/",
           icon: <WebIcon />,
         },
       ],
